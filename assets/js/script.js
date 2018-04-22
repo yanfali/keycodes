@@ -217,7 +217,7 @@ $(document).ready(() => {
     }
   }
 
-  function checkIsDirty(confirmFn, cancelFn) {
+  function checkIsDirty(successFn, failFn) {
     return () => {
       if (myKeymap.isDirty()) {
         if (
@@ -225,13 +225,13 @@ $(document).ready(() => {
             'This will clear your keymap - are you sure you want to change your layout?'
           )
         ) {
-          if (_.isFunction(cancelFn)) {
-            cancelFn();
+          if (_.isFunction(failFn)) {
+            failFn();
           }
           return;
         }
       }
-      confirmFn();
+      successFn();
     };
   }
 
@@ -1087,7 +1087,7 @@ $(document).ready(() => {
       { width: 1250 },
       { name: '1', code: 'KC_P1', keys: 'num_1' },
       { name: '2', code: 'KC_P2', keys: 'num_2' },
-      { name: '3', code: 'KC_P3', keys: 'num_3' },
+      { name: '4', code: 'KC_P3', keys: 'num_4' },
       { name: '=', code: 'KC_PEQL' },
       { width: 0 },
 
