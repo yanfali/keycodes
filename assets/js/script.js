@@ -33,8 +33,14 @@ $(document).ready(() => {
       .attr('x', d.x * 26)
       .attr('y', d.y * 26)
       .attr('width', w)
-      .append('text', d.name)
       .attr('height', 22);
+    var txt = box.append('text')
+      .attr('x', x)
+      .attr('y', y)
+      .attr('font-family', 'sans-serif')
+      .attr('font-size', '8px')
+      .attr('fill', '#000')
+      .text(d.name);
     return box;
   }
 
