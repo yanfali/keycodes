@@ -29,7 +29,7 @@ $(document).ready(() => {
     var height = 40;
     var xSpace = width * 1.1;
     var ySpace = width * 1.1;
-    var w = _.isUndefined(d.w) ? width : xSpace * d.w;
+    var w = _.isUndefined(d.w) ? width : width * d.w;
     var fontSize = '10px';
     var box = el
       .append('rect')
