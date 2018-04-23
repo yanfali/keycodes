@@ -1232,7 +1232,7 @@ $(document).ready(() => {
       {
         title: 'Mac',
         fontSize: '8px',
-        x: 20,
+        x: 19,
         y: 16,
         r: 270
       },
