@@ -41,8 +41,8 @@ $(document).ready(() => {
         .text(d.title);
       if (d.r) {
         var transform = [
+          ['translate(', d.x * xSpace, ',', d.y * ySpace, ')'].join('')
           ['rotate(', d.r, ')'].join(''),
-          ['translate(', d.x * xSpace, ',', d.y * ySpace * 0.66, ')'].join('')
         ].join(' ');
         text.attr('transform', transform);
       } else {
@@ -1215,7 +1215,7 @@ $(document).ready(() => {
         fontSize: '8px',
         x: 16.5,
         y: 16,
-        r: -90
+        r: 270
       },
       {
         name: 'KC_\nMNXT',
@@ -1234,7 +1234,7 @@ $(document).ready(() => {
         fontSize: '8px',
         x: 20,
         y: 16,
-        r: -90
+        r: 270
       },
       {
         name: 'KC_\nMFFD',
