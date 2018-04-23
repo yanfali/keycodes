@@ -25,20 +25,24 @@ $(document).ready(() => {
 
   function newSVGKeycode(d, i) {
     var el = d3.select(this);
-    var w = _.isUndefined(d.w) ? 22 : 22 * d.w;
+    var width = 40;
+    var height = 40;
+    var xSpace = width * 1.1;
+    var ySpace = width * 1.1;
+    var w = _.isUndefined(d.w) ? width : width * d.w;
     var box = el
       .append('rect')
       .attr('stroke', '#333')
       .attr('strokeWidth', '2px')
       .attr('fill', '#eee')
-      .attr('x', d.x * 26)
-      .attr('y', d.y * 26)
+      .attr('x', d.x * xSpace)
+      .attr('y', d.y * ySpace)
       .attr('width', w)
-      .attr('height', 22);
+      .attr('height', height);
     var txt = el
       .append('text')
-      .attr('x', d.x * 26 + 2)
-      .attr('y', d.y * 26 + 2)
+      .attr('x', d.x * xSpace + 6)
+      .attr('y', d.y * ySpace + 6)
       .attr('font-family', 'sans-serif')
       .attr('font-size', '8px')
       .attr('fill', '#000')
