@@ -39,14 +39,30 @@ $(document).ready(() => {
       .attr('y', d.y * ySpace)
       .attr('width', w)
       .attr('height', height);
-    var txt = el
-      .append('text')
-      .attr('x', d.x * xSpace + 4)
-      .attr('y', d.y * ySpace + 12)
-      .attr('font-family', 'sans-serif')
-      .attr('font-size', '8px')
-      .attr('fill', '#000')
-      .text(d.name);
+    if (d.name.includes('\n')) {
+      var parts = d.name.split('\n');
+      var offset = 0;
+      parts.forEach(function(part) {
+        el
+          .append('text')
+          .attr('x', d.x * xSpace + 4)
+          .attr('y', d.y * ySpace + 12 + offset)
+          .attr('font-family', 'sans-serif')
+          .attr('font-size', '8px')
+          .attr('fill', '#000')
+          .text(part);
+        offset += 10;
+      });
+    } else {
+      el
+        .append('text')
+        .attr('x', d.x * xSpace + 4)
+        .attr('y', d.y * ySpace + 12)
+        .attr('font-family', 'sans-serif')
+        .attr('font-size', '8px')
+        .attr('fill', '#000')
+        .text(d.name);
+    }
     return box;
   }
 
