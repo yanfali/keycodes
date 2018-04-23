@@ -35,12 +35,12 @@ $(document).ready(() => {
     if (d.h && d.h === 2) {
       // iso key
       var path = [
-        ['M', (xSpace - width) * -1, ',', 0].join(''),
+        ['M', width * 0.25 * -1, ',', 0].join(''),
         ['L', w, ',', 0].join(''),
         ['L', w, ',', d.h * ySpace - (xSpace - width)].join(''),
         ['L', 0, ',', d.h * ySpace - (xSpace - width)].join(''),
         ['L', 0, ',', ySpace].join(''),
-        ['L', (xSpace - width) * -1, ',', 0].join(''),
+        ['L', width * 0.25 * -1, ',', ySpace].join(''),
         'Z'
       ].join('');
       box = el
