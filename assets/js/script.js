@@ -46,7 +46,7 @@ $(document).ready(() => {
   function isFiltered(d) {
     var el = d3.select(this);
     var node = el.node();
-    if (_.isUndefined(ctrl.fitler) || ctrl.filter === '') {
+    if (_.isUndefined(ctrl.filter) || ctrl.filter === '') {
       node.setAttribute('opacity', '1');
       return;
     }
