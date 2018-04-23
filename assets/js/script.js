@@ -32,7 +32,7 @@ $(document).ready(() => {
     var w = _.isUndefined(d.w) ? width : xSpace * d.w - (xSpace - width);
     var fontSize = '10px';
     var box;
-    if (d.h && d.h === 2) {
+    if (d.name === 'KC_ENT' && d.h && d.h === 2) {
       // iso key
       var path = [
         ['M', width * 0.25 * -1, ',', 0].join(''),
