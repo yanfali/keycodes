@@ -33,15 +33,18 @@ $(document).ready(() => {
     var fontSize = '10px';
     var box;
     if (d.title) {
-      var text = el.append('text')
-        .attr('x', d.x * xSpace)
-        .attr('y', d.y * ySpace + ySpace * 0.66)
+      var text = el
+        .append('text')
         .attr('font-family', 'sans-serif')
         .attr('font-size', d.fontSize)
         .attr('fill', '#000')
         .text(d.title);
       if (d.r) {
-        text.attr('transform', ['rotate(', d.r, ')'].join(''));
+        var transform = [
+          ['rotate(', d.r, ')'].join(''),
+          ['translate(', d.x * xSpace, ',', d.y * ySpace * 0.66, ')'].join('')
+        ].join(';');
+        text.attr('transform', transform);
       }
       return text;
     }
