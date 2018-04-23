@@ -43,7 +43,7 @@ $(document).ready(() => {
         var transform = [
           ['rotate(', d.r, ')'].join(''),
           ['translate(', d.x * xSpace, ',', d.y * ySpace * 0.66, ')'].join('')
-        ].join(';');
+        ].join(' ');
         text.attr('transform', transform);
       } else {
         text.attr('x', d.x * xSpace).attr('y', d.y * ySpace + ySpace * 0.66);
