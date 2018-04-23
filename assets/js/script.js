@@ -39,8 +39,8 @@ $(document).ready(() => {
         ['L', w, ',', 0].join(''),
         ['L', w, ',', d.h * ySpace - (xSpace - width)].join(''),
         ['L', 0, ',', d.h * ySpace - (xSpace - width)].join(''),
-        ['L', 0, ',', ySpace].join(''),
-        ['L', width * 0.25 * -1, ',', ySpace].join(''),
+        ['L', 0, ',', height].join(''),
+        ['L', width * 0.25 * -1, ',', height].join(''),
         'Z'
       ].join('');
       box = el
