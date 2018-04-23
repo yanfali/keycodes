@@ -2,7 +2,7 @@ $(document).ready(() => {
   var keycodes = getKeycodes();
 
   var ctrl = {};
-  ctrl.svg  = d3.select('#qmkcodes');
+  ctrl.svg = d3.select('#qmkcodes');
   ctrl.g = ctrl.svg.append('g');
   ctrl.node = ctrl.g
     .append('g')
@@ -26,7 +26,8 @@ $(document).ready(() => {
   function newSVGKeycode(d, i) {
     var el = d3.select(this);
     var w = _.isUndefined(d.w) ? 22 : 22 * d.w;
-    var box = el.append('rect')
+    var box = el
+      .append('rect')
       .attr('stroke', '#333')
       .attr('strokeWidth', '2px')
       .attr('fill', '#eee')
@@ -34,9 +35,10 @@ $(document).ready(() => {
       .attr('y', d.y * 26)
       .attr('width', w)
       .attr('height', 22);
-    var txt = el.append('text')
-      .attr('x', d.x)
-      .attr('y', d.y)
+    var txt = el
+      .append('text')
+      .attr('x', d.x * 26 + 2)
+      .attr('y', d.y * 26 + 2)
       .attr('font-family', 'sans-serif')
       .attr('font-size', '8px')
       .attr('fill', '#000')
