@@ -51,7 +51,7 @@ $(document).ready(() => {
           ['translate(', d.x * xSpace, ',', d.y * ySpace, ')'].join('')
         );
     } else {
-      var h = d.h ? d.h * height : height;
+      var h = _.isUndefined(d.h) ? height: ySpace * d.h - (ySpace - width);
       box = el
         .append('rect')
         .attr('rx', '2px')
