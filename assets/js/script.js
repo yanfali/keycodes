@@ -11,8 +11,7 @@ $(document).ready(() => {
 
   refresh();
 
-  $('#filter').keydown(filterKeys).change(filterKeys);
-
+  setInterval(filterKeys, 100);
   return;
 
   ////////////////////////////////////////
@@ -38,7 +37,11 @@ $(document).ready(() => {
   }
 
   function filterKeys(/*event*/) {
-    ctrl.filter = $('#filter').val();
+    var curVal = $('#filter').val();
+    if (curVal === ctrl.filter) {
+      return;
+    }
+    ctrl.filter = curVal;
     console.log('filtering', ctrl.filter);
     refresh();
   }
