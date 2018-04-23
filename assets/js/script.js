@@ -20,7 +20,7 @@ $(document).ready(() => {
     .attr('class', 'keycode')
     .each(newSVGKeycode);
 
-  $('#filter').change(filterKeys);
+  $('#filter').keypress(filterKeys);
 
   return;
 
@@ -31,7 +31,8 @@ $(document).ready(() => {
   ////////////////////////////////////////
 
   function filterKeys(event) {
-    console.log('filtering');
+    var $target = $(event.target);
+    console.log('filtering', $target.val());
   }
 
   function newSVGKeycode(d) {
