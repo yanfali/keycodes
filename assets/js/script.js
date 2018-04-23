@@ -41,8 +41,8 @@ $(document).ready(() => {
       .attr('height', height);
     var txt = el
       .append('text')
-      .attr('x', d.x * xSpace + 6)
-      .attr('y', d.y * ySpace + 6)
+      .attr('x', d.x * xSpace + 4)
+      .attr('y', d.y * ySpace + 12)
       .attr('font-family', 'sans-serif')
       .attr('font-size', '8px')
       .attr('fill', '#000')
@@ -53,222 +53,222 @@ $(document).ready(() => {
   function getKeycodes() {
     return [
       {
-        name: 'KC_<br>ESC',
+        name: 'KC_\nESC',
         x: 0,
         y: 1.5
       },
       {
-        name: 'KC_<br>F1',
+        name: 'KC_\nF1',
         x: 2,
         y: 1.5
       },
       {
-        name: 'KC_<br>F2',
+        name: 'KC_\nF2',
         x: 3,
         y: 1.5
       },
       {
-        name: 'KC_<br>F3',
+        name: 'KC_\nF3',
         x: 4,
         y: 1.5
       },
       {
-        name: 'KC_<br>F4',
+        name: 'KC_\nF4',
         x: 5,
         y: 1.5
       },
       {
-        name: 'KC_<br>F5',
+        name: 'KC_\nF5',
         x: 6.5,
         y: 1.5
       },
       {
-        name: 'KC_<br>F6',
+        name: 'KC_\nF6',
         x: 7.5,
         y: 1.5
       },
       {
-        name: 'KC_<br>F7',
+        name: 'KC_\nF7',
         x: 8.5,
         y: 1.5
       },
       {
-        name: 'KC_<br>F8',
+        name: 'KC_\nF8',
         x: 9.5,
         y: 1.5
       },
       {
-        name: 'KC_<br>F9',
+        name: 'KC_\nF9',
         x: 11,
         y: 1.5
       },
       {
-        name: 'KC_<br>F10',
+        name: 'KC_\nF10',
         x: 12,
         y: 1.5
       },
       {
-        name: 'KC_<br>F11',
+        name: 'KC_\nF11',
         x: 13,
         y: 1.5
       },
       {
-        name: 'KC_<br>F12',
+        name: 'KC_\nF12',
         x: 14,
         y: 1.5
       },
       {
-        name: 'KC_<br>PSCR',
+        name: 'KC_\nPSCR',
         x: 15.5,
         y: 1.5
       },
       {
-        name: 'KC_<br>SLCK',
+        name: 'KC_\nSLCK',
         x: 16.5,
         y: 1.5
       },
       {
-        name: 'KC_<br>PAUS',
+        name: 'KC_\nPAUS',
         x: 17.5,
         y: 1.5
       },
       {
-        name: 'KC_<br>GESC',
+        name: 'KC_\nGESC',
         x: 0,
         y: 2.75
       },
       {
-        name: 'KC_<br>F13',
+        name: 'KC_\nF13',
         x: 2,
         y: 2.75
       },
       {
-        name: 'KC_<br>F14',
+        name: 'KC_\nF14',
         x: 3,
         y: 2.75
       },
       {
-        name: 'KC_<br>F15',
+        name: 'KC_\nF15',
         x: 4,
         y: 2.75
       },
       {
-        name: 'KC_<br>F16',
+        name: 'KC_\nF16',
         x: 5,
         y: 2.75
       },
       {
-        name: 'KC_<br>F17',
+        name: 'KC_\nF17',
         x: 6.5,
         y: 2.75
       },
       {
-        name: 'KC_<br>F18',
+        name: 'KC_\nF18',
         x: 7.5,
         y: 2.75
       },
       {
-        name: 'KC_<br>F19',
+        name: 'KC_\nF19',
         x: 8.5,
         y: 2.75
       },
       {
-        name: 'KC_<br>F20',
+        name: 'KC_\nF20',
         x: 9.5,
         y: 2.75
       },
       {
-        name: 'KC_<br>F21',
+        name: 'KC_\nF21',
         x: 11,
         y: 2.75
       },
       {
-        name: 'KC_<br>F22',
+        name: 'KC_\nF22',
         x: 12,
         y: 2.75
       },
       {
-        name: 'KC_<br>F23',
+        name: 'KC_\nF23',
         x: 13,
         y: 2.75
       },
       {
-        name: 'KC_<br>F24',
+        name: 'KC_\nF24',
         x: 14,
         y: 2.75
       },
       {
-        name: 'KC_<br>PEQL',
+        name: 'KC_\nPEQL',
         x: 19,
         y: 2.75
       },
       {
-        name: 'KC_<br>PCCM',
+        name: 'KC_\nPCCM',
         x: 20,
         y: 2.75
       },
       {
-        name: 'KC_<br>GRV',
+        name: 'KC_\nGRV',
         x: 0,
         y: 4
       },
       {
-        name: 'KC_<br>1',
+        name: 'KC_\n1',
         x: 1,
         y: 4
       },
       {
-        name: 'KC_<br>2',
+        name: 'KC_\n2',
         x: 2,
         y: 4
       },
       {
-        name: 'KC_<br>3',
+        name: 'KC_\n3',
         x: 3,
         y: 4
       },
       {
-        name: 'KC_<br>4',
+        name: 'KC_\n4',
         x: 4,
         y: 4
       },
       {
-        name: 'KC_<br>5',
+        name: 'KC_\n5',
         x: 5,
         y: 4
       },
       {
-        name: 'KC_<br>6',
+        name: 'KC_\n6',
         x: 6,
         y: 4
       },
       {
-        name: 'KC_<br>7',
+        name: 'KC_\n7',
         x: 7,
         y: 4
       },
       {
-        name: 'KC_<br>8',
+        name: 'KC_\n8',
         x: 8,
         y: 4
       },
       {
-        name: 'KC_<br>9',
+        name: 'KC_\n9',
         x: 9,
         y: 4
       },
       {
-        name: 'KC_<br>0',
+        name: 'KC_\n0',
         x: 10,
         y: 4
       },
       {
-        name: 'KC_<br>MINS',
+        name: 'KC_\nMINS',
         x: 11,
         y: 4
       },
       {
-        name: 'KC_<br>EQL',
+        name: 'KC_\nEQL',
         x: 12,
         y: 4
       },
@@ -279,37 +279,37 @@ $(document).ready(() => {
         w: 2
       },
       {
-        name: 'KC_<br>INS',
+        name: 'KC_\nINS',
         x: 15.5,
         y: 4
       },
       {
-        name: 'KC_<br>HOME',
+        name: 'KC_\nHOME',
         x: 16.5,
         y: 4
       },
       {
-        name: 'KC_<br>PGUP',
+        name: 'KC_\nPGUP',
         x: 17.5,
         y: 4
       },
       {
-        name: 'KC_<br>NLCK',
+        name: 'KC_\nNLCK',
         x: 19,
         y: 4
       },
       {
-        name: 'KC_<br>PSLS',
+        name: 'KC_\nPSLS',
         x: 20,
         y: 4
       },
       {
-        name: 'KC_<br>PAST',
+        name: 'KC_\nPAST',
         x: 21,
         y: 4
       },
       {
-        name: 'KC_<br>PMNS',
+        name: 'KC_\nPMNS',
         x: 22,
         y: 4
       },
@@ -320,62 +320,62 @@ $(document).ready(() => {
         w: 1.5
       },
       {
-        name: 'KC_<br>Q',
+        name: 'KC_\nQ',
         x: 1.5,
         y: 5
       },
       {
-        name: 'KC_<br>W',
+        name: 'KC_\nW',
         x: 2.5,
         y: 5
       },
       {
-        name: 'KC_<br>E',
+        name: 'KC_\nE',
         x: 3.5,
         y: 5
       },
       {
-        name: 'KC_<br>R',
+        name: 'KC_\nR',
         x: 4.5,
         y: 5
       },
       {
-        name: 'KC_<br>T',
+        name: 'KC_\nT',
         x: 5.5,
         y: 5
       },
       {
-        name: 'KC_<br>Y',
+        name: 'KC_\nY',
         x: 6.5,
         y: 5
       },
       {
-        name: 'KC_<br>U',
+        name: 'KC_\nU',
         x: 7.5,
         y: 5
       },
       {
-        name: 'KC_<br>I',
+        name: 'KC_\nI',
         x: 8.5,
         y: 5
       },
       {
-        name: 'KC_<br>O',
+        name: 'KC_\nO',
         x: 9.5,
         y: 5
       },
       {
-        name: 'KC_<br>P',
+        name: 'KC_\nP',
         x: 10.5,
         y: 5
       },
       {
-        name: 'KC_<br>LBRC',
+        name: 'KC_\nLBRC',
         x: 11.5,
         y: 5
       },
       {
-        name: 'KC_<br>RBRC',
+        name: 'KC_\nRBRC',
         x: 12.5,
         y: 5
       },
@@ -386,37 +386,37 @@ $(document).ready(() => {
         w: 1.5
       },
       {
-        name: 'KC_<br>DEL',
+        name: 'KC_\nDEL',
         x: 15.5,
         y: 5
       },
       {
-        name: 'KC_<br>END',
+        name: 'KC_\nEND',
         x: 16.5,
         y: 5
       },
       {
-        name: 'KC_<br>PGDN',
+        name: 'KC_\nPGDN',
         x: 17.5,
         y: 5
       },
       {
-        name: 'KC_<br>P7',
+        name: 'KC_\nP7',
         x: 19,
         y: 5
       },
       {
-        name: 'KC_<br>P8',
+        name: 'KC_\nP8',
         x: 20,
         y: 5
       },
       {
-        name: 'KC_<br>P9',
+        name: 'KC_\nP9',
         x: 21,
         y: 5
       },
       {
-        name: 'KC_<br>PPLS',
+        name: 'KC_\nPPLS',
         x: 22,
         y: 5,
         h: 2
@@ -428,57 +428,57 @@ $(document).ready(() => {
         w: 1.75
       },
       {
-        name: 'KC_<br>A',
+        name: 'KC_\nA',
         x: 1.75,
         y: 6
       },
       {
-        name: 'KC_<br>S',
+        name: 'KC_\nS',
         x: 2.75,
         y: 6
       },
       {
-        name: 'KC_<br>D',
+        name: 'KC_\nD',
         x: 3.75,
         y: 6
       },
       {
-        name: 'KC_<br>F',
+        name: 'KC_\nF',
         x: 4.75,
         y: 6
       },
       {
-        name: 'KC_<br>G',
+        name: 'KC_\nG',
         x: 5.75,
         y: 6
       },
       {
-        name: 'KC_<br>H',
+        name: 'KC_\nH',
         x: 6.75,
         y: 6
       },
       {
-        name: 'KC_<br>J',
+        name: 'KC_\nJ',
         x: 7.75,
         y: 6
       },
       {
-        name: 'KC_<br>K',
+        name: 'KC_\nK',
         x: 8.75,
         y: 6
       },
       {
-        name: 'KC_<br>L',
+        name: 'KC_\nL',
         x: 9.75,
         y: 6
       },
       {
-        name: 'KC_<br>SCLN',
+        name: 'KC_\nSCLN',
         x: 10.75,
         y: 6
       },
       {
-        name: 'KC_<br>QUOT',
+        name: 'KC_\nQUOT',
         x: 11.75,
         y: 6
       },
@@ -489,17 +489,17 @@ $(document).ready(() => {
         w: 2.25
       },
       {
-        name: 'KC_<br>P4',
+        name: 'KC_\nP4',
         x: 19,
         y: 6
       },
       {
-        name: 'KC_<br>P5',
+        name: 'KC_\nP5',
         x: 20,
         y: 6
       },
       {
-        name: 'KC_<br>P6',
+        name: 'KC_\nP6',
         x: 21,
         y: 6
       },
@@ -510,52 +510,52 @@ $(document).ready(() => {
         w: 2.25
       },
       {
-        name: 'KC_<br>Z',
+        name: 'KC_\nZ',
         x: 2.25,
         y: 7
       },
       {
-        name: 'KC_<br>X',
+        name: 'KC_\nX',
         x: 3.25,
         y: 7
       },
       {
-        name: 'KC_<br>C',
+        name: 'KC_\nC',
         x: 4.25,
         y: 7
       },
       {
-        name: 'KC_<br>V',
+        name: 'KC_\nV',
         x: 5.25,
         y: 7
       },
       {
-        name: 'KC_<br>B',
+        name: 'KC_\nB',
         x: 6.25,
         y: 7
       },
       {
-        name: 'KC_<br>N',
+        name: 'KC_\nN',
         x: 7.25,
         y: 7
       },
       {
-        name: 'KC_<br>M',
+        name: 'KC_\nM',
         x: 8.25,
         y: 7
       },
       {
-        name: 'KC_<br>COMM',
+        name: 'KC_\nCOMM',
         x: 9.25,
         y: 7
       },
       {
-        name: 'KC_<br>DOT',
+        name: 'KC_\nDOT',
         x: 10.25,
         y: 7
       },
       {
-        name: 'KC_<br>SLSH',
+        name: 'KC_\nSLSH',
         x: 11.25,
         y: 7
       },
@@ -566,45 +566,45 @@ $(document).ready(() => {
         w: 2.75
       },
       {
-        name: 'KC_<br>UP',
+        name: 'KC_\nUP',
         x: 16.5,
         y: 7
       },
       {
-        name: 'KC_<br>P1',
+        name: 'KC_\nP1',
         x: 19,
         y: 7
       },
       {
-        name: 'KC_<br>P2',
+        name: 'KC_\nP2',
         x: 20,
         y: 7
       },
       {
-        name: 'KC_<br>P3',
+        name: 'KC_\nP3',
         x: 21,
         y: 7
       },
       {
-        name: 'KC_<br>PENT',
+        name: 'KC_\nPENT',
         x: 22,
         y: 7,
         h: 2
       },
       {
-        name: 'KC_<br>LCTL',
+        name: 'KC_\nLCTL',
         x: 0,
         y: 8,
         w: 1.25
       },
       {
-        name: 'KC_<br>LGUI',
+        name: 'KC_\nLGUI',
         x: 1.25,
         y: 8,
         w: 1.25
       },
       {
-        name: 'KC_<br>LALT',
+        name: 'KC_\nLALT',
         x: 2.5,
         y: 8,
         w: 1.25
@@ -616,41 +616,41 @@ $(document).ready(() => {
         w: 6.25
       },
       {
-        name: 'KC_<br>RALT',
+        name: 'KC_\nRALT',
         x: 10,
         y: 8,
         w: 1.25
       },
       {
-        name: 'KC_<br>RGUI',
+        name: 'KC_\nRGUI',
         x: 11.25,
         y: 8,
         w: 1.25
       },
       {
-        name: 'KC_<br>APP',
+        name: 'KC_\nAPP',
         x: 12.5,
         y: 8,
         w: 1.25
       },
       {
-        name: 'KC_<br>RCTL',
+        name: 'KC_\nRCTL',
         x: 13.75,
         y: 8,
         w: 1.25
       },
       {
-        name: 'KC_<br>LEFT',
+        name: 'KC_\nLEFT',
         x: 15.5,
         y: 8
       },
       {
-        name: 'KC_<br>DOWN',
+        name: 'KC_\nDOWN',
         x: 16.5,
         y: 8
       },
       {
-        name: 'KC_<br>RGHT',
+        name: 'KC_\nRGHT',
         x: 17.5,
         y: 8
       },
@@ -661,7 +661,7 @@ $(document).ready(() => {
         w: 2
       },
       {
-        name: 'KC_<br>PDOT',
+        name: 'KC_\nPDOT',
         x: 21,
         y: 8
       },
@@ -718,7 +718,7 @@ $(document).ready(() => {
         y: 10
       },
       {
-        name: 'KC_<br>YEN',
+        name: 'KC_\nYEN',
         x: 13,
         y: 10
       },
@@ -854,7 +854,7 @@ $(document).ready(() => {
         y: 12
       },
       {
-        name: 'KC_<br>NUHS',
+        name: 'KC_\nNUHS',
         x: 12.75,
         y: 12
       },
@@ -871,13 +871,13 @@ $(document).ready(() => {
         w: 1.25
       },
       {
-        name: 'KC_<br>NO',
+        name: 'KC_\nNO',
         x: 19,
         y: 12,
         w: 1.25
       },
       {
-        name: 'KC_<br>TRNS',
+        name: 'KC_\nTRNS',
         x: 20.25,
         y: 12,
         w: 1.25
@@ -888,7 +888,7 @@ $(document).ready(() => {
         w: 1.25
       },
       {
-        name: 'KC_<br>NUBS',
+        name: 'KC_\nNUBS',
         x: 1.25,
         y: 13
       },
@@ -933,7 +933,7 @@ $(document).ready(() => {
         y: 13
       },
       {
-        name: 'KC_<br>RO',
+        name: 'KC_\nRO',
         x: 12.25,
         y: 13
       },
@@ -943,19 +943,19 @@ $(document).ready(() => {
         w: 1.75
       },
       {
-        name: 'KC_<br>HYPR',
+        name: 'KC_\nHYPR',
         x: 16.5,
         y: 13,
         w: 1.25
       },
       {
-        name: 'KC_<br>MEH',
+        name: 'KC_\nMEH',
         x: 17.75,
         y: 13,
         w: 1.25
       },
       {
-        name: 'KC_<br>LOCK',
+        name: 'KC_\nLOCK',
         x: 19,
         y: 13,
         w: 1.25
@@ -976,7 +976,7 @@ $(document).ready(() => {
         w: 1.25
       },
       {
-        name: 'KC_<br>MHEN',
+        name: 'KC_\nMHEN',
         x: 3.75,
         y: 14,
         w: 1.25
@@ -987,13 +987,13 @@ $(document).ready(() => {
         w: 4
       },
       {
-        name: 'KC_<br>HENK',
+        name: 'KC_\nHENK',
         x: 9,
         y: 14,
         w: 1.25
       },
       {
-        name: 'KC_<br>KANA',
+        name: 'KC_\nKANA',
         x: 10.25,
         y: 14,
         w: 1.25
@@ -1013,97 +1013,97 @@ $(document).ready(() => {
         w: 1.25
       },
       {
-        name: 'KC_<br>MUTE',
+        name: 'KC_\nMUTE',
         x: 16.5,
         y: 15,
         w: 1.25
       },
       {
-        name: 'KC_<br>VOLU',
+        name: 'KC_\nVOLU',
         x: 17.75,
         y: 15,
         w: 1.25
       },
       {
-        name: 'KC_<br>VOLD',
+        name: 'KC_\nVOLD',
         x: 19,
         y: 15,
         w: 1.25
       },
       {
-        name: 'KC_<br>MSTP',
+        name: 'KC_\nMSTP',
         x: 20.25,
         y: 15,
         w: 1.25
       },
       {
-        name: 'KC_<br>MPLY',
+        name: 'KC_\nMPLY',
         x: 21.5,
         y: 15,
         w: 1.25
       },
       {
-        name: 'KC_<br>TILD',
+        name: 'KC_\nTILD',
         x: 0,
         y: 16
       },
       {
-        name: 'KC_<br>EXLM',
+        name: 'KC_\nEXLM',
         x: 1,
         y: 16
       },
       {
-        name: 'KC_<br>AT',
+        name: 'KC_\nAT',
         x: 2,
         y: 16
       },
       {
-        name: 'KC_<br>HASH',
+        name: 'KC_\nHASH',
         x: 3,
         y: 16
       },
       {
-        name: 'KC_<br>DLR',
+        name: 'KC_\nDLR',
         x: 4,
         y: 16
       },
       {
-        name: 'KC_<br>PERC',
+        name: 'KC_\nPERC',
         x: 5,
         y: 16
       },
       {
-        name: 'KC_<br>CIRC',
+        name: 'KC_\nCIRC',
         x: 6,
         y: 16
       },
       {
-        name: 'KC_<br>AMPR',
+        name: 'KC_\nAMPR',
         x: 7,
         y: 16
       },
       {
-        name: 'KC_<br>ASTR',
+        name: 'KC_\nASTR',
         x: 8,
         y: 16
       },
       {
-        name: 'KC_<br>LPRN',
+        name: 'KC_\nLPRN',
         x: 9,
         y: 16
       },
       {
-        name: 'KC_<br>RPRN',
+        name: 'KC_\nRPRN',
         x: 10,
         y: 16
       },
       {
-        name: 'KC_<br>UNDS',
+        name: 'KC_\nUNDS',
         x: 11,
         y: 16
       },
       {
-        name: 'KC_<br>PLUS',
+        name: 'KC_\nPLUS',
         x: 12,
         y: 16
       },
@@ -1113,25 +1113,25 @@ $(document).ready(() => {
         w: 2
       },
       {
-        name: 'KC_<br>MNXT',
+        name: 'KC_\nMNXT',
         x: 17,
         y: 16,
         w: 1.25
       },
       {
-        name: 'KC_<br>MPRV',
+        name: 'KC_\nMPRV',
         x: 18.25,
         y: 16,
         w: 1.25
       },
       {
-        name: 'KC_<br>MFFD',
+        name: 'KC_\nMFFD',
         x: 20,
         y: 16,
         w: 1.25
       },
       {
-        name: 'KC_<br>MRWD',
+        name: 'KC_\nMRWD',
         x: 21.25,
         y: 16,
         w: 1.25
@@ -1182,17 +1182,17 @@ $(document).ready(() => {
         y: 17
       },
       {
-        name: 'KC_<br>LCBR',
+        name: 'KC_\nLCBR',
         x: 11.5,
         y: 17
       },
       {
-        name: 'KC_<br>RCBR',
+        name: 'KC_\nRCBR',
         x: 12.5,
         y: 17
       },
       {
-        name: 'KC_<br>PIPE',
+        name: 'KC_\nPIPE',
         x: 13.5,
         y: 17,
         w: 1.5
@@ -1239,12 +1239,12 @@ $(document).ready(() => {
         y: 18
       },
       {
-        name: 'KC_<br>COLN',
+        name: 'KC_\nCOLN',
         x: 10.75,
         y: 18
       },
       {
-        name: 'KC_<br>DQUO',
+        name: 'KC_\nDQUO',
         x: 11.75,
         y: 18
       },
@@ -1254,31 +1254,31 @@ $(document).ready(() => {
         w: 2.25
       },
       {
-        name: 'KC_<br>HELP',
+        name: 'KC_\nHELP',
         x: 16.5,
         y: 18,
         w: 1.25
       },
       {
-        name: 'KC_<br>UNDO',
+        name: 'KC_\nUNDO',
         x: 17.75,
         y: 18,
         w: 1.25
       },
       {
-        name: 'KC_<br>CUT',
+        name: 'KC_\nCUT',
         x: 19,
         y: 18,
         w: 1.25
       },
       {
-        name: 'KC_<br>COPY',
+        name: 'KC_\nCOPY',
         x: 20.25,
         y: 18,
         w: 1.25
       },
       {
-        name: 'KC_<br>PASTE',
+        name: 'KC_\nPASTE',
         x: 21.5,
         y: 18,
         w: 1.25
@@ -1317,17 +1317,17 @@ $(document).ready(() => {
         y: 19
       },
       {
-        name: 'KC_<br>LABK',
+        name: 'KC_\nLABK',
         x: 9.25,
         y: 19
       },
       {
-        name: 'KC_<br>RABK',
+        name: 'KC_\nRABK',
         x: 10.25,
         y: 19
       },
       {
-        name: 'KC_<br>QUES',
+        name: 'KC_\nQUES',
         x: 11.25,
         y: 19
       },
@@ -1337,31 +1337,31 @@ $(document).ready(() => {
         w: 2.75
       },
       {
-        name: 'KC_<br>FIND',
+        name: 'KC_\nFIND',
         x: 16.5,
         y: 19,
         w: 1.25
       },
       {
-        name: 'KC_<br>SYSREQ',
+        name: 'KC_\nSYSREQ',
         x: 17.75,
         y: 19,
         w: 1.25
       },
       {
-        name: 'KC_<br>CANCEL',
+        name: 'KC_\nCANCEL',
         x: 19,
         y: 19,
         w: 1.25
       },
       {
-        name: 'KC_<br>PWR',
+        name: 'KC_\nPWR',
         x: 20.25,
         y: 19,
         w: 1.25
       },
       {
-        name: 'KC_<br>SLEP',
+        name: 'KC_\nSLEP',
         x: 21.5,
         y: 19,
         w: 1.25
@@ -1407,25 +1407,25 @@ $(document).ready(() => {
         w: 1.25
       },
       {
-        name: 'KC_<br>CALC',
+        name: 'KC_\nCALC',
         x: 16.5,
         y: 20,
         w: 1.25
       },
       {
-        name: 'KC_<br>MYCM',
+        name: 'KC_\nMYCM',
         x: 17.75,
         y: 20,
         w: 1.25
       },
       {
-        name: 'KC_<br>WAKE',
+        name: 'KC_\nWAKE',
         x: 19,
         y: 20,
         w: 1.25
       },
       {
-        name: 'KC_<br>MAIL',
+        name: 'KC_\nMAIL',
         x: 20.25,
         y: 20,
         w: 1.25
@@ -1511,25 +1511,25 @@ $(document).ready(() => {
         y: 22
       },
       {
-        name: 'KC_<br>WSCH',
+        name: 'KC_\nWSCH',
         x: 16.5,
         y: 22,
         w: 1.25
       },
       {
-        name: 'KC_<br>WHOM',
+        name: 'KC_\nWHOM',
         x: 17.75,
         y: 22,
         w: 1.25
       },
       {
-        name: 'KC_<br>WBAK',
+        name: 'KC_\nWBAK',
         x: 19,
         y: 22,
         w: 1.25
       },
       {
-        name: 'KC_<br>WFWD',
+        name: 'KC_\nWFWD',
         x: 20.25,
         y: 22,
         w: 1.25
@@ -1615,19 +1615,19 @@ $(document).ready(() => {
         y: 23
       },
       {
-        name: 'KC_<br>WSTP',
+        name: 'KC_\nWSTP',
         x: 16.5,
         y: 23,
         w: 1.25
       },
       {
-        name: 'KC_<br>WREF',
+        name: 'KC_\nWREF',
         x: 17.75,
         y: 23,
         w: 1.25
       },
       {
-        name: 'KC_<br>WFAV',
+        name: 'KC_\nWFAV',
         x: 19,
         y: 23,
         w: 1.25
@@ -1713,37 +1713,37 @@ $(document).ready(() => {
         y: 25
       },
       {
-        name: 'BL_<br>TOGG',
+        name: 'BL_\nTOGG',
         x: 16.5,
         y: 25
       },
       {
-        name: 'BL_<br>STEP',
+        name: 'BL_\nSTEP',
         x: 17.5,
         y: 25
       },
       {
-        name: 'BL_<br>ON',
+        name: 'BL_\nON',
         x: 18.5,
         y: 25
       },
       {
-        name: 'BL_<br>OFF',
+        name: 'BL_\nOFF',
         x: 19.5,
         y: 25
       },
       {
-        name: 'BL_<br>INC',
+        name: 'BL_\nINC',
         x: 20.5,
         y: 25
       },
       {
-        name: 'BL_<br>DEC',
+        name: 'BL_\nDEC',
         x: 21.5,
         y: 25
       },
       {
-        name: 'BL_<br>BRTG',
+        name: 'BL_\nBRTG',
         x: 22.5,
         y: 25
       },
@@ -1828,17 +1828,17 @@ $(document).ready(() => {
         y: 26
       },
       {
-        name: 'RGB_<BR>TOG',
+        name: 'RGB_\nTOG',
         x: 17.75,
         y: 27
       },
       {
-        name: 'RGB_<BR>MOD',
+        name: 'RGB_\nMOD',
         x: 18.75,
         y: 27
       },
       {
-        name: 'RGB_<BR>RMOD',
+        name: 'RGB_\nRMOD',
         x: 19.75,
         y: 27
       },
@@ -1923,32 +1923,32 @@ $(document).ready(() => {
         y: 28
       },
       {
-        name: 'RGB_<BR>HUI',
+        name: 'RGB_\nHUI',
         x: 17.75,
         y: 28
       },
       {
-        name: 'RGB_<BR>HUD',
+        name: 'RGB_\nHUD',
         x: 18.75,
         y: 28
       },
       {
-        name: 'RGB_<BR>SAI',
+        name: 'RGB_\nSAI',
         x: 19.75,
         y: 28
       },
       {
-        name: 'RGB_<BR>SAD',
+        name: 'RGB_\nSAD',
         x: 20.75,
         y: 28
       },
       {
-        name: 'RGB_<BR>VAI',
+        name: 'RGB_\nVAI',
         x: 21.75,
         y: 28
       },
       {
-        name: 'RGB_<BR>VAD',
+        name: 'RGB_\nVAD',
         x: 22.75,
         y: 28
       },
@@ -2033,42 +2033,42 @@ $(document).ready(() => {
         y: 29
       },
       {
-        name: 'RGB_<BR>M_P',
+        name: 'RGB_\nM_P',
         x: 17.75,
         y: 29
       },
       {
-        name: 'RGB_<BR>M_B',
+        name: 'RGB_\nM_B',
         x: 18.75,
         y: 29
       },
       {
-        name: 'RGB_<BR>M_R',
+        name: 'RGB_\nM_R',
         x: 19.75,
         y: 29
       },
       {
-        name: 'RGB_<BR>M_SW',
+        name: 'RGB_\nM_SW',
         x: 20.75,
         y: 29
       },
       {
-        name: 'RGB_<BR>M_SN',
+        name: 'RGB_\nM_SN',
         x: 17.75,
         y: 30
       },
       {
-        name: 'RGB_<BR>M_K',
+        name: 'RGB_\nM_K',
         x: 18.75,
         y: 30
       },
       {
-        name: 'RGB_<BR>M_X',
+        name: 'RGB_\nM_X',
         x: 19.75,
         y: 30
       },
       {
-        name: 'RGB_<br>M_G',
+        name: 'RGB_\nM_G',
         x: 20.75,
         y: 30
       },
@@ -2235,195 +2235,195 @@ $(document).ready(() => {
         w: 1.5
       },
       {
-        name: 'KC_<br>MS_U',
+        name: 'KC_\nMS_U',
         x: 1,
         y: 35.5
       },
       {
-        name: 'KC_<br>ACL2',
+        name: 'KC_\nACL2',
         x: 8,
         y: 35.5
       },
       {
-        name: 'KC_<br>WH_U',
+        name: 'KC_\nWH_U',
         x: 11,
         y: 35.5
       },
       {
-        name: 'KC_<br>BTN1',
+        name: 'KC_\nBTN1',
         x: 3.75,
         y: 36
       },
       {
-        name: 'KC_<br>BTN3',
+        name: 'KC_\nBTN3',
         x: 4.75,
         y: 36
       },
       {
-        name: 'KC_<br>BTN2',
+        name: 'KC_\nBTN2',
         x: 5.75,
         y: 36
       },
       {
-        name: 'KC_<br>MS_L',
+        name: 'KC_\nMS_L',
         x: 0,
         y: 36.5
       },
       {
-        name: 'KC_<br>MS_R',
+        name: 'KC_\nMS_R',
         x: 2,
         y: 36.5
       },
       {
-        name: 'KC_<br>ACL1',
+        name: 'KC_\nACL1',
         x: 8,
         y: 36.5
       },
       {
-        name: 'KC_<br>WH_L',
+        name: 'KC_\nWH_L',
         x: 10,
         y: 36.5
       },
       {
-        name: 'KC_<br>WH_R',
+        name: 'KC_\nWH_R',
         x: 12,
         y: 36.5
       },
       {
-        name: 'KC_<br>BTN4',
+        name: 'KC_\nBTN4',
         x: 4.25,
         y: 37
       },
       {
-        name: 'KC_<br>BTN5',
+        name: 'KC_\nBTN5',
         x: 5.25,
         y: 37
       },
       {
-        name: 'KC_<br>MS_D',
+        name: 'KC_\nMS_D',
         x: 1,
         y: 37.5
       },
       {
-        name: 'KC_<br>ACL0',
+        name: 'KC_\nACL0',
         x: 8,
         y: 37.5
       },
       {
-        name: 'KC_<br>WH_D',
+        name: 'KC_\nWH_D',
         x: 11,
         y: 37.5
       },
       {
-        name: 'MAGIC_<br>SWAP_CONTROL_CAPSLOCK',
+        name: 'MAGIC_\nSWAP_CONTROL_CAPSLOCK',
         x: 0,
         y: 39.5,
         w: 3.75
       },
       {
-        name: 'MAGIC_<br>UNSWAP_CONTROL_CAPSLOCK',
+        name: 'MAGIC_\nUNSWAP_CONTROL_CAPSLOCK',
         x: 3.75,
         y: 39.5,
         w: 3.75
       },
       {
-        name: 'MAGIC_<br>CAPSLOCK_TO_CONTROL',
+        name: 'MAGIC_\nCAPSLOCK_TO_CONTROL',
         x: 7.5,
         y: 39.5,
         w: 3.75
       },
       {
-        name: 'MAGIC_<br>UNCAPSLOCK_TO_CONTROL',
+        name: 'MAGIC_\nUNCAPSLOCK_TO_CONTROL',
         x: 11.25,
         y: 39.5,
         w: 3.75
       },
       {
-        name: 'MAGIC_<br>SWAP_BACKSLASH_BACKSPACE',
+        name: 'MAGIC_\nSWAP_BACKSLASH_BACKSPACE',
         x: 15,
         y: 39.5,
         w: 3.75
       },
       {
-        name: 'MAGIC_<br>UNSWAP_BACKSLASH_BACKSPACE',
+        name: 'MAGIC_\nUNSWAP_BACKSLASH_BACKSPACE',
         x: 18.75,
         y: 39.5,
         w: 3.75
       },
       {
-        name: 'MAGIC_<br>SWAP_LALT_LGUI',
+        name: 'MAGIC_\nSWAP_LALT_LGUI',
         x: 0,
         y: 40.5,
         w: 3.75
       },
       {
-        name: 'MAGIC_<br>UNSWAP_LALT_LGUI',
+        name: 'MAGIC_\nUNSWAP_LALT_LGUI',
         x: 3.75,
         y: 40.5,
         w: 3.75
       },
       {
-        name: 'MAGIC_<br>SWAP_RALT_RGUI',
+        name: 'MAGIC_\nSWAP_RALT_RGUI',
         x: 7.5,
         y: 40.5,
         w: 3.75
       },
       {
-        name: 'MAGIC_<br>UNSWAP_RALT_RGUI',
+        name: 'MAGIC_\nUNSWAP_RALT_RGUI',
         x: 11.25,
         y: 40.5,
         w: 3.75
       },
       {
-        name: 'MAGIC_<br>SWAP_ALT_GUI',
+        name: 'MAGIC_\nSWAP_ALT_GUI',
         x: 15,
         y: 40.5,
         w: 3.75
       },
       {
-        name: 'MAGIC_<br>UNSWAP_ALT_GUI',
+        name: 'MAGIC_\nUNSWAP_ALT_GUI',
         x: 18.75,
         y: 40.5,
         w: 3.75
       },
       {
-        name: 'MAGIC_<br>NO_GUI',
+        name: 'MAGIC_\nNO_GUI',
         x: 0,
         y: 41.5,
         w: 3.75
       },
       {
-        name: 'MAGIC_<br>UNNO_GUI',
+        name: 'MAGIC_\nUNNO_GUI',
         x: 3.75,
         y: 41.5,
         w: 3.75
       },
       {
-        name: 'MAGIC_<br>SWAP_GRAVE_ESC',
+        name: 'MAGIC_\nSWAP_GRAVE_ESC',
         x: 7.5,
         y: 41.5,
         w: 3.75
       },
       {
-        name: 'MAGIC_<br>UNSWAP_GRAVE_ESC',
+        name: 'MAGIC_\nUNSWAP_GRAVE_ESC',
         x: 11.25,
         y: 41.5,
         w: 3.75
       },
       {
-        name: 'MAGIC_<br>HOST_NKRO',
+        name: 'MAGIC_\nHOST_NKRO',
         x: 15,
         y: 41.5,
         w: 3.75
       },
       {
-        name: 'MAGIC_<br>UNHOST_NKRO',
+        name: 'MAGIC_\nUNHOST_NKRO',
         x: 18.75,
         y: 41.5,
         w: 3.75
       },
       {
-        name: 'MAGIC_<br>TOGGLE_NKRO',
+        name: 'MAGIC_\nTOGGLE_NKRO',
         x: 0,
         y: 42.5,
         w: 3.75
