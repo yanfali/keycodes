@@ -41,8 +41,8 @@ $(document).ready(() => {
         .text(d.title);
       if (d.r) {
         var transform = [
-          ['translate(', d.x * xSpace, ',', d.y * ySpace, ')'].join('')
-          ['rotate(', d.r, ')'].join(''),
+          ['translate(', d.x * xSpace, ',', d.y * ySpace, ')'].join(''),
+          ['rotate(', d.r, ')'].join('')
         ].join(' ');
         text.attr('transform', transform);
       } else {
