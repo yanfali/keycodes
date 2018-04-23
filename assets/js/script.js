@@ -20,7 +20,7 @@ $(document).ready(() => {
     .attr('class', 'keycode')
     .each(newSVGKeycode);
 
-  $('#filter').keyup(filterKeys);
+  $('#filter').keydown(filterKeys);
 
   return;
 
