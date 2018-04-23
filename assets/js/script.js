@@ -31,9 +31,10 @@ $(document).ready(() => {
     var ySpace = width * 1.1;
     var w = _.isUndefined(d.w) ? width : xSpace * d.w - (xSpace - width);
     var fontSize = '10px';
+    var box;
     if (d.h && d.h === 2) {
       // iso key
-      var path = el
+      box = el
         .append('path')
         .attr(
           'd',
@@ -48,18 +49,19 @@ $(document).ready(() => {
           ].join('')
         );
     } else {
-      var box = el
+      box = el
         .append('rect')
-        .attr('stroke', '#333')
-        .attr('strokeWidth', '2px')
-        .attr('fill', '#eee')
-        .attr('x', d.x * xSpace)
-        .attr('y', d.y * ySpace)
         .attr('rx', '2px')
         .attr('ry', '2px')
         .attr('width', w)
         .attr('height', height);
     }
+    box
+      .attr('stroke', '#333')
+      .attr('strokeWidth', '2px')
+      .attr('fill', '#eee')
+      .attr('x', d.x * xSpace)
+      .attr('y', d.y * ySpace);
     if (d.name && d.name.includes('\n')) {
       var parts = d.name.split('\n');
       var offset = 0;
