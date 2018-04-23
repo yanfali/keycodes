@@ -34,7 +34,7 @@ $(document).ready(() => {
       .attr('y', d.y * 26)
       .attr('width', w)
       .attr('height', 22);
-    var txt = box.append('text')
+    var txt = el.append('text')
       .attr('x', d.x)
       .attr('y', d.y)
       .attr('font-family', 'sans-serif')
