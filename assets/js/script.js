@@ -37,7 +37,7 @@ $(document).ready(() => {
       el
         .append('text')
         .attr('x', d.x * xSpace)
-        .attr('y', d.y * ySpace)
+        .attr('y', d.y * ySpace + 15)
         .attr('font-family', 'sans-serif')
         .attr('font-size', d.fontSize)
         .attr('fill', '#000')
@@ -106,10 +106,11 @@ $(document).ready(() => {
   }
 
   function getKeycodes() {
+    var title2FontSize = '20px';
     return [
       {
         title: 'US ANSI Keys',
-        fontSize: '14px',
+        fontSize: title2FontSize,
         x: 0,
         y: 0
       },
@@ -728,7 +729,7 @@ $(document).ready(() => {
       },
       {
         title: 'Europe and Japan ISO Keys',
-        fontSize: '14px',
+        fontSize: title2FontSize,
         x: 0,
         y: 9
       },
@@ -795,7 +796,7 @@ $(document).ready(() => {
       },
       {
         title: 'Locking Keys',
-        fontSize: '14px',
+        fontSize: title2FontSize,
         x: 16.5,
         y: 9
       },
@@ -933,7 +934,7 @@ $(document).ready(() => {
       },
       {
         title: 'Quantum Keycodes',
-        fontSize: '14px',
+        fontSize: title2FontSize,
         x: 16.5,
         y: 11
       },
@@ -1093,7 +1094,7 @@ $(document).ready(() => {
       },
       {
         title: 'Media Controls',
-        fontSize: '14px',
+        fontSize: title2FontSize,
         x: 16.5,
         y: 14
       },
@@ -1531,7 +1532,7 @@ $(document).ready(() => {
       },
       {
         title: 'Layer Switching - Momentary - Active When Held',
-        fontSize: '14px',
+        fontSize: title2FontSize,
         x: 0,
         y: 21
       },
@@ -1617,7 +1618,7 @@ $(document).ready(() => {
       },
       {
         title: 'WWW Commands (OS Dependent)',
-        fontSize: '14px',
+        fontSize: title2FontSize,
         x: 16.5,
         y: 21
       },
