@@ -38,6 +38,8 @@ $(document).ready(() => {
       .attr('fill', '#eee')
       .attr('x', d.x * xSpace)
       .attr('y', d.y * ySpace)
+      .attr('rx', '2px')
+      .attr('ry', '2px')
       .attr('width', w)
       .attr('height', height);
     if (d.name && d.name.includes('\n')) {
