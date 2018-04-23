@@ -2466,7 +2466,7 @@ $(document).ready(() => {
         title: 'Move',
         fontSize: title3FontSize,
         x: 1,
-        y: 35
+        y: 34.5
       },
       {
         name: 'KC_\nMS_U',
@@ -2477,7 +2477,7 @@ $(document).ready(() => {
         title: 'Acceleration',
         fontSize: title3FontSize,
         x: 8,
-        y: 35
+        y: 34.5
       },
       {
         name: 'KC_\nACL2',
@@ -2488,7 +2488,7 @@ $(document).ready(() => {
         title: 'Scroll',
         fontSize: title3FontSize,
         x: 11,
-        y: 35
+        y: 34.5
       },
       {
         name: 'KC_\nWH_U',
@@ -2504,7 +2504,7 @@ $(document).ready(() => {
         title: 'Buttons',
         fontSize: title3FontSize,
         x: 4.75,
-        y: 35
+        y: 34.5
       },
       {
         name: 'KC_\nBTN3',
