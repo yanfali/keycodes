@@ -41,7 +41,7 @@ $(document).ready(() => {
         .text(d.title);
       if (d.r) {
         var transform = [
-          ['translate(', d.x * xSpace, ',', d.y * ySpace, ')'].join(''),
+          ['translate(', d.x * xSpace + width * 0.33, ',', d.y * ySpace + ySpace * 0.66, ')'].join(''),
           ['rotate(', d.r, ')'].join('')
         ].join(' ');
         text.attr('transform', transform);
