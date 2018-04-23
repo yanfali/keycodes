@@ -113,6 +113,7 @@ $(document).ready(() => {
 
   function getKeycodes() {
     var title2FontSize = '20px';
+    var title3FontSize = '10px';
     return [
       {
         title: 'US ANSI Keys',
@@ -1212,7 +1213,7 @@ $(document).ready(() => {
       },
       {
         title: 'Win',
-        fontSize: '8px',
+        fontSize: title3FontSize,
         x: 16.5,
         y: 16,
         r: 270
@@ -1231,7 +1232,7 @@ $(document).ready(() => {
       },
       {
         title: 'Mac',
-        fontSize: '8px',
+        fontSize: title3FontSize,
         x: 19.5,
         y: 16,
         r: 270
