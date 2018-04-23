@@ -51,12 +51,13 @@ $(document).ready(() => {
           ['translate(', d.x * xSpace, ',', d.y * ySpace, ')'].join('')
         );
     } else {
+      var h = d.h ? d.h * height : height;
       box = el
         .append('rect')
         .attr('rx', '2px')
         .attr('ry', '2px')
         .attr('width', w)
-        .attr('height', height)
+        .attr('height', h)
         .attr('x', d.x * xSpace)
         .attr('y', d.y * ySpace);
     }
