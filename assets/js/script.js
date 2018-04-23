@@ -8,12 +8,19 @@ $(document).ready(() => {
     .append('g')
     .attr('class', 'keycodes')
     .selectAll('g');
-  ctrl.node = ctrl.node.data(keycodes);
+  ctrl.node = ctrl.node.data(keycodes, function(d) {
+    if (d.name) {
+      return d.name;
+    }
+    return d.x + '-' + d.y;
+  });
   ctrl.node = ctrl.node
     .enter()
     .append('g')
     .attr('class', 'keycode')
     .each(newSVGKeycode);
+
+  $('#filter').change(filterKeys);
 
   return;
 
@@ -23,7 +30,11 @@ $(document).ready(() => {
   //
   ////////////////////////////////////////
 
-  function newSVGKeycode(d, i) {
+  function filterKeys(event) {
+    console.log('filtering');
+  }
+
+  function newSVGKeycode(d) {
     var el = d3.select(this);
     var width = 40;
     var height = 40;
@@ -41,7 +52,13 @@ $(document).ready(() => {
         .text(d.title);
       if (d.r) {
         var transform = [
-          ['translate(', d.x * xSpace + width * 0.33, ',', d.y * ySpace + ySpace * 0.66, ')'].join(''),
+          [
+            'translate(',
+            d.x * xSpace + width * 0.33,
+            ',',
+            d.y * ySpace + ySpace * 0.66,
+            ')'
+          ].join(''),
           ['rotate(', d.r, ')'].join('')
         ].join(' ');
         text.attr('transform', transform);
