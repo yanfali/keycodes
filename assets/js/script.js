@@ -39,7 +39,7 @@ $(document).ready(() => {
 
   function filterKeys(/*event*/) {
     ctrl.filter = $('#filter').val();
-    console.log('filtering', ctrl.val());
+    console.log('filtering', ctrl.filter);
     refresh();
   }
 
