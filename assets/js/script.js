@@ -32,6 +32,19 @@ $(document).ready(() => {
     var w = _.isUndefined(d.w) ? width : xSpace * d.w - (xSpace - width);
     var fontSize = '10px';
     var box;
+    if (d.title) {
+      var text = el.append('text');
+      el
+        .append('text')
+        .attr('x', d.x * xSpace)
+        .attr('y', d.y * ySpace)
+        .attr('font-family', 'sans-serif')
+        .attr('font-size', d.fontSize)
+        .attr('fill', '#000')
+        .text(d.title);
+      return text;
+    }
+
     if (d.name === 'KC_ENT' && d.h && d.h === 2) {
       // iso key
       var path = [
@@ -51,7 +64,7 @@ $(document).ready(() => {
           ['translate(', d.x * xSpace, ',', d.y * ySpace, ')'].join('')
         );
     } else {
-      var h = _.isUndefined(d.h) ? height: ySpace * d.h - (ySpace - width);
+      var h = _.isUndefined(d.h) ? height : ySpace * d.h - (ySpace - width);
       box = el
         .append('rect')
         .attr('rx', '2px')
@@ -94,6 +107,12 @@ $(document).ready(() => {
 
   function getKeycodes() {
     return [
+      {
+        title: 'US ANSI Keys',
+        fontSize: '14px',
+        x: 0,
+        y: 0
+      },
       {
         name: 'KC_\nESC',
         x: 0,
@@ -708,6 +727,12 @@ $(document).ready(() => {
         y: 8
       },
       {
+        title: 'Europe and Japan ISO Keys',
+        fontSize: '14px',
+        x: 0,
+        y: 9
+      },
+      {
         x: 0,
         y: 10
       },
@@ -767,6 +792,12 @@ $(document).ready(() => {
       {
         x: 14,
         y: 10
+      },
+      {
+        title: 'Locking Keys',
+        fontSize: '14px',
+        x: 16.5,
+        y: 9
       },
       {
         name: 'KC_LCAP',
@@ -899,6 +930,12 @@ $(document).ready(() => {
         name: 'KC_\nNUHS',
         x: 12.75,
         y: 12
+      },
+      {
+        title: 'Quantum Keycodes',
+        fontSize: '14px',
+        x: 16.5,
+        y: 11
       },
       {
         name: 'RESET',
@@ -1055,6 +1092,12 @@ $(document).ready(() => {
         w: 1.25
       },
       {
+        title: 'Media Controls',
+        fontSize: '14px',
+        x: 16.5,
+        y: 14
+      },
+      {
         name: 'KC_\nMUTE',
         x: 16.5,
         y: 15,
@@ -1155,6 +1198,13 @@ $(document).ready(() => {
         w: 2
       },
       {
+        title: 'Win',
+        fontSize: '8px',
+        x: 16.5,
+        y: 14,
+        r: -90
+      },
+      {
         name: 'KC_\nMNXT',
         x: 17,
         y: 16,
@@ -1165,6 +1215,13 @@ $(document).ready(() => {
         x: 18.25,
         y: 16,
         w: 1.25
+      },
+      {
+        title: 'Mac',
+        fontSize: '8px',
+        x: 20,
+        y: 14,
+        r: -90
       },
       {
         name: 'KC_\nMFFD',
@@ -1473,6 +1530,12 @@ $(document).ready(() => {
         w: 1.25
       },
       {
+        title: 'Layer Switching - Momentary - Active When Held',
+        fontSize: '14px',
+        x: 0,
+        y: 21
+      },
+      {
         name: 'MO(0)',
         x: 0,
         y: 22
@@ -1551,6 +1614,12 @@ $(document).ready(() => {
         name: 'MO(15)',
         x: 15,
         y: 22
+      },
+      {
+        title: 'WWW Commands (OS Dependent)',
+        fontSize: '14px',
+        x: 16.5,
+        y: 21
       },
       {
         name: 'KC_\nWSCH',
