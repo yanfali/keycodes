@@ -30,8 +30,8 @@ $(document).ready(() => {
       .attr('stroke', '#333')
       .attr('strokeWidth', '2px')
       .attr('fill', '#eee')
-      .attr('x', d.x * 22)
-      .attr('y', d.y * 22)
+      .attr('x', d.x * 26)
+      .attr('y', d.y * 26)
       .attr('width', w)
       .attr('text', d.name)
       .attr('height', 22);
