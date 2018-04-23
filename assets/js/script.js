@@ -50,7 +50,7 @@ $(document).ready(() => {
       node.setAttribute('opacity', '1');
       return;
     }
-    if (d.name.contains(ctrl.filter.toUpperCase())) {
+    if (_.isUndefined(d.name) || d.name.contains(ctrl.filter.toUpperCase())) {
       node.setAttribute('opacity', '1');
       return;
     }
