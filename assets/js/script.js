@@ -11,7 +11,7 @@ $(document).ready(() => {
 
   refresh();
 
-  $('#filter').keydown(filterKeys);
+  $('#filter').keydown(filterKeys).change(filterKeys);
 
   return;
 
