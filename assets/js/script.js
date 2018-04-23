@@ -33,7 +33,7 @@ $(document).ready(() => {
       .attr('x', d.x * 26)
       .attr('y', d.y * 26)
       .attr('width', w)
-      .attr('text', d.name)
+      .append('text', d.name)
       .attr('height', 22);
     return box;
   }
