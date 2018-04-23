@@ -8,17 +8,8 @@ $(document).ready(() => {
     .append('g')
     .attr('class', 'keycodes')
     .selectAll('g');
-  ctrl.node = ctrl.node.data(keycodes, function(d) {
-    if (d.name) {
-      return d.name;
-    }
-    return d.x + '-' + d.y;
-  });
-  ctrl.node = ctrl.node
-    .enter()
-    .append('g')
-    .attr('class', 'keycode')
-    .each(newSVGKeycode);
+
+  refresh();
 
   $('#filter').keydown(filterKeys);
 
@@ -30,8 +21,40 @@ $(document).ready(() => {
   //
   ////////////////////////////////////////
 
+  function refresh() {
+    ctrl.node = ctrl.node.data(keycodes, function(d) {
+      if (d.name) {
+        return d.name;
+      }
+      return d.x + '-' + d.y;
+    });
+    ctrl.node = ctrl.node
+      .enter()
+      .append('g')
+      .attr('class', 'keycode')
+      .each(newSVGKeycode)
+      .merge(ctrl.node)
+      .each(isFiltered);
+  }
+
   function filterKeys(/*event*/) {
-    console.log('filtering', $('#filter').val());
+    ctrl.filter = $('#filter').val();
+    console.log('filtering', ctrl.val());
+    refresh();
+  }
+
+  function isFiltered(d) {
+    var el = d3.select(this);
+    var node = el.node();
+    if (_.isUndefined(ctrl.fitler) || ctrl.filter === '') {
+      node.setAttribute('opacity', '1');
+      return;
+    }
+    if (d.name.contains(ctrl.filter.toUpperCase())) {
+      node.setAttribute('opacity', '1');
+      return;
+    }
+    node.setAttribute('opacity', '0.5');
   }
 
   function newSVGKeycode(d) {
