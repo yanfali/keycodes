@@ -1,9 +1,15 @@
 $(document).ready(() => {
   var keycodes = getKeycodes();
 
-  var vm = {};
-  vm.node = vm.node.data(keycodes);
-  vm.node = vm.node
+  var ctrl = {};
+  ctrl.svg  = d3.select('#qmkcodes');
+  ctrl.g = ctrl.svg.append('g');
+  ctrl.node = ctrl.g
+    .append('g')
+    .attr('class', 'keycodes')
+    .selectAll('g');
+  ctrl.node = ctrl.node.data(keycodes);
+  ctrl.node = ctrl.node
     .enter()
     .append('g')
     .attr('class', 'keycode')
@@ -21,6 +27,9 @@ $(document).ready(() => {
     var el = d3.select(this);
     var w = _.isUndefined(d.w) ? 22 : 22 * d.w;
     var box = el.append('rect')
+      .attr('stroke', '#333')
+      .attr('strokeWidth', '2px')
+      .attr('fill', '#eee')
       .attr('x', d.x * 22)
       .attr('y', d.y * 22)
       .attr('width', w)
