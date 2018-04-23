@@ -35,13 +35,18 @@ $(document).ready(() => {
       // iso key
       var path = el
         .append('path')
-        .attr('d', [['M', (xSpace - width) * -1, 0].join(''),
-            ['L', w, 0].join(''),
-            ['L', w, d.h * ySpace - (xSpace - width)].join(''),
-            ['L', 0, d.h * ySpace - (xSpace - width)].join(''),
-            ['L', 0, ySpace].join(''),
-            ['L', (xSpace -width) * -1, 0].join(''),
-            'Z'].join(''));
+        .attr(
+          'd',
+          [
+            ['M', (xSpace - width) * -1, ',', 0].join(''),
+            ['L', w, ',', 0].join(''),
+            ['L', w, ',', d.h * ySpace - (xSpace - width)].join(''),
+            ['L', 0, ',', d.h * ySpace - (xSpace - width)].join(''),
+            ['L', 0, ',', ySpace].join(''),
+            ['L', (xSpace - width) * -1, ',', 0].join(''),
+            'Z'
+          ].join('')
+        );
     } else {
       var box = el
         .append('rect')
