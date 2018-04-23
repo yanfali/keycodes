@@ -34,19 +34,21 @@ $(document).ready(() => {
     var box;
     if (d.h && d.h === 2) {
       // iso key
+      var path = [
+        ['M', (xSpace - width) * -1, ',', 0].join(''),
+        ['L', w, ',', 0].join(''),
+        ['L', w, ',', d.h * ySpace - (xSpace - width)].join(''),
+        ['L', 0, ',', d.h * ySpace - (xSpace - width)].join(''),
+        ['L', 0, ',', ySpace].join(''),
+        ['L', (xSpace - width) * -1, ',', 0].join(''),
+        'Z'
+      ].join('');
       box = el
         .append('path')
+        .attr('d', path)
         .attr(
-          'd',
-          [
-            ['M', (xSpace - width) * -1, ',', 0].join(''),
-            ['L', w, ',', 0].join(''),
-            ['L', w, ',', d.h * ySpace - (xSpace - width)].join(''),
-            ['L', 0, ',', d.h * ySpace - (xSpace - width)].join(''),
-            ['L', 0, ',', ySpace].join(''),
-            ['L', (xSpace - width) * -1, ',', 0].join(''),
-            'Z'
-          ].join('')
+          'transform',
+          ['translate(', d.x * xSpace, ',', d.y * ySpace, ')'].join('')
         );
     } else {
       box = el
@@ -54,14 +56,14 @@ $(document).ready(() => {
         .attr('rx', '2px')
         .attr('ry', '2px')
         .attr('width', w)
-        .attr('height', height);
+        .attr('height', height)
+        .attr('x', d.x * xSpace)
+        .attr('y', d.y * ySpace);
     }
     box
       .attr('stroke', '#333')
       .attr('strokeWidth', '2px')
-      .attr('fill', '#eee')
-      .attr('x', d.x * xSpace)
-      .attr('y', d.y * ySpace);
+      .attr('fill', '#eee');
     if (d.name && d.name.includes('\n')) {
       var parts = d.name.split('\n');
       var offset = 0;
