@@ -33,15 +33,16 @@ $(document).ready(() => {
     var fontSize = '10px';
     var box;
     if (d.title) {
-      var text = el.append('text');
-      el
-        .append('text')
+      var text = el.append('text')
         .attr('x', d.x * xSpace)
         .attr('y', d.y * ySpace + ySpace * 0.66)
         .attr('font-family', 'sans-serif')
         .attr('font-size', d.fontSize)
         .attr('fill', '#000')
         .text(d.title);
+      if (d.r) {
+        text.attr('transform', ['rotate(', d.r, ')'].join(''));
+      }
       return text;
     }
 
@@ -1129,6 +1130,12 @@ $(document).ready(() => {
         w: 1.25
       },
       {
+        title: 'US ANSI Keys Shifted',
+        fontSize: title2FontSize,
+        x: 0,
+        y: 15
+      },
+      {
         name: 'KC_\nTILD',
         x: 0,
         y: 16
@@ -1202,7 +1209,7 @@ $(document).ready(() => {
         title: 'Win',
         fontSize: '8px',
         x: 16.5,
-        y: 14,
+        y: 16,
         r: -90
       },
       {
@@ -1221,7 +1228,7 @@ $(document).ready(() => {
         title: 'Mac',
         fontSize: '8px',
         x: 20,
-        y: 14,
+        y: 16,
         r: -90
       },
       {
