@@ -1801,6 +1801,12 @@ $(document).ready(() => {
         w: 1.25
       },
       {
+        title: 'Layer Switching - Toggle - Turn On/Off When Pressed',
+        fontSize: title2FontSize,
+        x: 0,
+        y: 24
+      },
+      {
         name: 'TG(0)',
         x: 0,
         y: 25
@@ -1879,6 +1885,12 @@ $(document).ready(() => {
         name: 'TG(15)',
         x: 15,
         y: 25
+      },
+      {
+        title: 'Backlighting',
+        fontSize: title2FontSize,
+        x: 16.5,
+        y: 24
       },
       {
         name: 'BL_\nTOGG',
@@ -1996,6 +2008,18 @@ $(document).ready(() => {
         y: 26
       },
       {
+        title: 'RGB Lighting',
+        fontSize: title2FontSize,
+        x: 16.5,
+        y: 26
+      },
+      {
+        title: 'Control',
+        fontSize: title3FontSize,
+        x: 16.5,
+        y: 27
+      },
+      {
         name: 'RGB_\nTOG',
         x: 17.75,
         y: 27
@@ -2008,6 +2032,12 @@ $(document).ready(() => {
       {
         name: 'RGB_\nRMOD',
         x: 19.75,
+        y: 27
+      },
+      {
+        title: 'Layer Switching - Oneshot - Remains active until the next keypress',
+        fontSize: title2FontSize,
+        x: 0,
         y: 27
       },
       {
@@ -2088,6 +2118,12 @@ $(document).ready(() => {
       {
         name: 'OSL(15)',
         x: 15,
+        y: 28
+      },
+      {
+        title: 'Color',
+        fontSize: title3FontSize,
+        x: 16.5,
         y: 28
       },
       {
@@ -2201,6 +2237,12 @@ $(document).ready(() => {
         y: 29
       },
       {
+        title: 'Modes',
+        fontSize: title3FontSize,
+        x: 16.5,
+        y: 29
+      },
+      {
         name: 'RGB_\nM_P',
         x: 17.75,
         y: 29
@@ -2239,6 +2281,12 @@ $(document).ready(() => {
         name: 'RGB_\nM_G',
         x: 20.75,
         y: 30
+      },
+      {
+        title: 'Modifiers',
+        fontSize: title2FontSize,
+        x: 0,
+        y: 31
       },
       {
         name: 'LCTL(KC)',
@@ -2325,6 +2373,12 @@ $(document).ready(() => {
         w: 1.25
       },
       {
+        title: 'Mod-Tap Keys',
+        fontSize: title2FontSize,
+        x: 0,
+        y: 32
+      },
+      {
         name: 'LCTL_T(KC)',
         x: 0,
         y: 33,
@@ -2403,14 +2457,38 @@ $(document).ready(() => {
         w: 1.5
       },
       {
+        title: 'Mouse Keys',
+        fontSize: title2FontSize,
+        x: 0,
+        y: 34
+      },
+      {
+        title: 'Move',
+        fontSize: title3FontSize,
+        x: 1,
+        y: 35
+      },
+      {
         name: 'KC_\nMS_U',
         x: 1,
         y: 35.5
       },
       {
+        title: 'Acceleration',
+        fontSize: title3FontSize,
+        x: 8,
+        y: 35
+      },
+      {
         name: 'KC_\nACL2',
         x: 8,
         y: 35.5
+      },
+      {
+        title: 'Scroll',
+        fontSize: title3FontSize,
+        x: 11,
+        y: 35
       },
       {
         name: 'KC_\nWH_U',
@@ -2421,6 +2499,12 @@ $(document).ready(() => {
         name: 'KC_\nBTN1',
         x: 3.75,
         y: 36
+      },
+      {
+        title: 'Buttons',
+        fontSize: title3FontSize,
+        x: 4.75,
+        y: 35
       },
       {
         name: 'KC_\nBTN3',
@@ -2481,6 +2565,12 @@ $(document).ready(() => {
         name: 'KC_\nWH_D',
         x: 11,
         y: 37.5
+      },
+      {
+        title: 'Bootmagic Keycodes',
+        fontSize: title2FontSize,
+        x: 0,
+        y: 38.5
       },
       {
         name: 'MAGIC_\nSWAP_CONTROL_CAPSLOCK',
