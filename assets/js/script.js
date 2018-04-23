@@ -37,7 +37,7 @@ $(document).ready(() => {
       el
         .append('text')
         .attr('x', d.x * xSpace)
-        .attr('y', d.y * ySpace + 15)
+        .attr('y', d.y * ySpace + ySpace / 2)
         .attr('font-family', 'sans-serif')
         .attr('font-size', d.fontSize)
         .attr('fill', '#000')
@@ -111,7 +111,7 @@ $(document).ready(() => {
       {
         title: 'US ANSI Keys',
         fontSize: title2FontSize,
-        x: 0,
+        x: 0.5,
         y: 0
       },
       {
