@@ -39,7 +39,7 @@ $(document).ready(() => {
       .attr('y', d.y * ySpace)
       .attr('width', w)
       .attr('height', height);
-    if (d.name.includes('\n')) {
+    if (d.name && d.name.includes('\n')) {
       var parts = d.name.split('\n');
       var offset = 0;
       parts.forEach(function(part) {
