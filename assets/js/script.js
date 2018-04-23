@@ -30,6 +30,7 @@ $(document).ready(() => {
     var xSpace = width * 1.1;
     var ySpace = width * 1.1;
     var w = _.isUndefined(d.w) ? width : width * d.w;
+    var fontSize = '10px';
     var box = el
       .append('rect')
       .attr('stroke', '#333')
@@ -48,7 +49,7 @@ $(document).ready(() => {
           .attr('x', d.x * xSpace + 4)
           .attr('y', d.y * ySpace + 12 + offset)
           .attr('font-family', 'sans-serif')
-          .attr('font-size', '8px')
+          .attr('font-size', fontSize)
           .attr('fill', '#000')
           .text(part);
         offset += 10;
@@ -59,7 +60,7 @@ $(document).ready(() => {
         .attr('x', d.x * xSpace + 4)
         .attr('y', d.y * ySpace + 12)
         .attr('font-family', 'sans-serif')
-        .attr('font-size', '8px')
+        .attr('font-size', fontSize)
         .attr('fill', '#000')
         .text(d.name);
     }
